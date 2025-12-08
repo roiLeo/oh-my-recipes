@@ -12,17 +12,15 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
         <!-- Category Filters -->
         <div class="flex flex-wrap gap-2">
-          <button
-            class="px-4 py-1.5 rounded-full text-sm font-medium transition-colors bg-inverted text-inverted"
-            data-value="all"
-          >
-            All
-          </button>
-          <button v-for="category in allCategories"
-            class="px-4 py-1.5 rounded-full text-sm font-medium transition-colors bg-elevated hover:bg-accented"
-          >
-            {{ category }}
-          </button>
+          <UButton label="All" class="rounded-full px-4" color="neutral" :variant="selectedCat === '' ? 'solid' : 'outline'" @click="selectedCat = ''" />
+          <UButton
+            v-for="category in allCategories"
+            :label="category"
+            class="rounded-full px-4"
+            color="neutral"
+            :variant="selectedCat === category ? 'solid' : 'outline'"
+            @click="selectedCat = category"
+          />
         </div>
 
         <USelect v-model="selectedTag" class="w-42" :items="allTags" />
@@ -71,11 +69,13 @@
 
 <script lang="ts" setup>
 const selectedTag = ref('')
+const selectedCat = ref('')
 const searchValue = ref('')
 
 const { data: recipes, refresh } = await useAsyncData('recipes', () => {
   return queryCollection('recipes')
     .where('title', 'LIKE', `%${searchValue.value}%`)
+    .where('category', 'LIKE', `%${selectedCat.value}%`)
     .where('tags', 'LIKE', `%${selectedTag.value}%`)
     .order('publishedAt', 'DESC')
     .all()
@@ -84,8 +84,7 @@ const { data: recipes, refresh } = await useAsyncData('recipes', () => {
 const allCategories = [...new Set(recipes.value?.map((recipe) => recipe.category).filter(Boolean))]
 const allTags = [...new Set(recipes.value?.flatMap((recipe) => recipe.tags || []).filter(Boolean))].sort()
 
-
-function formatDate(date: Date): string {
+const formatDate = (date: Date): string => {
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -93,12 +92,12 @@ function formatDate(date: Date): string {
   })
 }
 
-function getDifficultyLabel(difficulty?: 'easy' | 'medium' | 'hard'): string {
+const getDifficultyLabel = (difficulty?: 'easy' | 'medium' | 'hard'): string => {
   const labels = { easy: 'Easy', medium: 'Medium', hard: 'Hard' }
   return difficulty ? labels[difficulty] : ''
 }
 
-function getTotalTime(prepTime?: number, cookTime?: number): string {
+const getTotalTime = (prepTime?: number, cookTime?: number): string => {
   const total = (prepTime || 0) + (cookTime || 0)
   if (total === 0) return ''
   if (total < 60) return `${total} min`
@@ -107,5 +106,5 @@ function getTotalTime(prepTime?: number, cookTime?: number): string {
   return mins > 0 ? `${hours}h ${mins}min` : `${hours}h`
 }
 
-watch([searchValue, selectedTag], () => refresh())
+watch([searchValue, selectedTag, selectedCat], () => refresh())
 </script>

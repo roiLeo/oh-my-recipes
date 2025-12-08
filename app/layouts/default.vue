@@ -3,7 +3,7 @@
     <div class="flex min-h-screen flex-col">
       <DefaultNavbar />
 
-      <div class="bg-primary-50 dark:bg-primary-950">
+      <div class="bg-primary-50 dark:bg-neutral-950">
         <UContainer>
           <NuxtPage />
         </UContainer>
