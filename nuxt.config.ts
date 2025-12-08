@@ -11,9 +11,8 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  colorMode: {
-    preference: 'dark',
-    classSuffix: ''
+  content: {
+    experimental: { sqliteConnector: 'native' },
   },
 
   compatibilityDate: '2025-03-21'
