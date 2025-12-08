@@ -1,19 +1,19 @@
 <template>
   <div>
     <UPageSection
-      :ui="{ container: '!py-16' }"
+      :ui="{ container: '!py-16', title: 'font-serif', headline: 'uppercase' }"
       description="Exploring the universe of flavors, one recipe at a time."
       headline="Our story"
     >
       <template #title>
-        We are <span class="text-primary italic">Recipes</span>
+        We are <span class="text-primary italic">Oh My Recipes</span>
       </template>
     </UPageSection>
 
-    <div class="max-w-3xl mx-auto px-6">
+    <section class="max-w-3xl mx-auto px-6">
       <div class="prose prose-stone prose-lg mx-auto text-muted">
         <p>
-          Welcome to Recipes, a digital sanctuary for food lovers, home cooks, and culinary explorers.
+          Welcome to <span class="font-bold font-serif italic">Oh My Recipes</span>, a digital sanctuary for food lovers, home cooks, and culinary explorers.
           We believe that cooking is more than just preparation—it's an adventure, a science, and an art form combined.
         </p>
 
@@ -74,6 +74,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>

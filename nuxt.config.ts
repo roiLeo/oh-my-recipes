@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Recipes',
+      title: 'Oh My Recipes',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     }

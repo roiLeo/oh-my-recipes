@@ -2,9 +2,10 @@
   <div>
     <UPageHero
       description="Explore a collection of recipes, techniques, and stories from the kitchen. From simple weeknight dinners to elaborate weekend projects."
-      headline="Welcome to Recipes"
+      headline="Welcome to OhMyRecipes"
       orientation="vertical"
       :links="links"
+      :ui="{ title: 'font-serif', headline: 'uppercase' }"
     >
       <template #title>
         Culinary <span class="text-primary italic">Adventures</span> <br>for the Curious Cook
@@ -13,7 +14,7 @@
 
     <section class="pb-24">
       <div class="flex items-end justify-between mb-10">
-        <h2 class="text-2xl text-content">Latest Recipes</h2>
+        <h2 class="text-3xl font-semibold font-serif">Latest Recipes</h2>
         <UButton size="xl" to="/recipes" label="View all" variant="ghost" trailing-icon="i-lucide-chevron-right" />
       </div>
 

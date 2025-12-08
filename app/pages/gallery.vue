@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto px-4">
     <UPageSection
-      :ui="{ container: '!py-16' }"
+      :ui="{ container: '!py-16', title: 'font-serif', headline: 'uppercase' }"
       description="Explore our recipes through the lens. A collection of textures, colors, and flavors."
       headline="Visual Feast"
       title="Culinary Gallery"

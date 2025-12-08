@@ -2,7 +2,7 @@
 <template>
   <div class="max-w-4xl mx-auto px-4">
     <header class="mb-8">
-      <UPageHeader title="Recipes" description="Discover our latest food recipes and articles" />
+      <UPageHeader :ui="{ title: 'font-serif' }" title="Food Recipes" description="Discover our latest food recipes and articles" />
     </header>
 
     <!-- Search and Filter Section -->
@@ -37,9 +37,10 @@
         :key="index"
         v-bind="recipe"
         :to="recipe.path"
+        :ui="{ title: 'font-serif' }"
       >
         <template #badge>
-          <div class="flex items-center gap-2 mb-1">
+          <div class="flex items-center gap-2">
             <span class="text-xs text-gray-400 uppercase">{{ recipe.category }}</span>
 
             <template v-if="recipe.difficulty">
