@@ -11,9 +11,5 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  content: {
-    experimental: { sqliteConnector: 'native' },
-  },
-
-  compatibilityDate: '2025-03-21'
+  compatibilityDate: '2025-12-08'
 })

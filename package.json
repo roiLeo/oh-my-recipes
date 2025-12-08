@@ -1,12 +1,12 @@
 {
-  "name": "recipes",
+  "name": "oh-my-recipes",
   "description": "A Nuxt starter template with TypeScript, ESLint, Prettier, Husky, lint-staged, Nuxt UI, and i18n configured and ready to use.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/roiLeo/Recipes.git"
+    "url": "https://github.com/roiLeo/oh-my-recipes.git"
   },
   "bugs": {
-    "url": "https://github.com/roiLeo/Recipes/issues"
+    "url": "https://github.com/roiLeo/oh-my-recipes/issues"
   },
   "scripts": {
     "dev": "nuxi dev",
@@ -43,7 +43,6 @@
     "@nuxt/content": "3.9.0",
     "@nuxt/ui": "4.2.1",
     "@nuxtjs/i18n": "^10.2.1",
-    "better-sqlite3": "^12.5.0",
     "nuxt": "^4.2.1"
   }
 }

@@ -1,47 +1,133 @@
 # Oh My Recipes 👩‍🍳
 
-> Look at the [nuxt documentation](https://nuxt.com/) to learn more.
+> Culinary Adventures for the Curious Cook
 
-This is the Nuxtjs boilerplate. It contains the following conventions/features:
+A modern recipe management application built with Nuxt 3, designed to help you discover, organize, and share your favorite recipes.
 
-- [x] 🪲 [Typescript](https://www.typescriptlang.org/)
-- [x] 💚 [Nuxt](https://nuxt.com//)
-- [x] 🌊 [Nuxt UI](https://ui.nuxt.com/)
-- [x] ✨ [Eslint](https://eslint.org/) & [Prettier](https://prettier.io/)
-- [x] 🐕 [Husky](https://github.com/typicode/husky) git hooks
+## ✨ Features
 
-## Setup
+- 📖 Browse and search cooking recipes
+- 🎨 Modern, responsive UI built with Nuxt UI
+- 📝 Content-driven architecture with markdown support
+- 🚀 Fast and optimized with Nuxt 3
+- 📱 Mobile-friendly design
+- 🔍 Easy recipe discovery and filtering
 
-Make sure to install the dependencies:
+## 🛠️ Tech Stack
+
+- **Framework**: [Nuxt](https://nuxt.com/) - The Intuitive Vue Framework
+- **UI Components**: [Nuxt UI](https://ui.nuxt.com/) - Fully styled and customizable components
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type safety and better developer experience
+- **Code Quality**: [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Consistent code formatting
+- **Git Hooks**: [Husky](https://github.com/typicode/husky) - Automated quality checks
+
+## 📋 Prerequisites
+
+- Node.js (v20 or higher recommended)
+- pnpm (or npm/yarn)
+
+## 🚀 Getting Started
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-pnpm
+git clone https://github.com/roiLeo/oh-my-recipes.git
+cd oh-my-recipes
+pnpm install
 ```
 
-## Development Server
+### Development
 
-Start the development server on http://localhost:3000
+Start the development server at `http://localhost:3000`:
 
 ```bash
 pnpm dev
 ```
 
-## Production
+The application will automatically reload when you make changes to the code.
 
-Build the application for production:
+### Building for Production
+
+Create an optimized production build:
 
 ```bash
 pnpm build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
 pnpm preview
 ```
 
-## Deployment
+## 📝 Adding Recipes
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/roiLeo/oh-my-recipes) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/roiLeo/oh-my-recipes)
+Recipes are stored as markdown files in the `content/recipes/` directory. Each recipe should follow a consistent format with frontmatter metadata.
 
-Checkout the [deployment documentation](https://nuxt.com//guide/deploy/presets) for more information.
+Example recipe structure:
+
+```markdown
+---
+title: "Your Recipe Name"
+description: "Brief description of the recipe"
+cookTime: "30 minutes"
+servings: 4
+---
+
+## Ingredients
+- Ingredient 1
+- Ingredient 2
+
+## Instructions
+1. Step 1
+2. Step 2
+```
+
+## 🚢 Deployment
+
+The application can be easily deployed to various platforms:
+
+### Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/roiLeo/oh-my-recipes)
+
+### Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/roiLeo/oh-my-recipes)
+
+For more deployment options, check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. Here are some ways you can contribute:
+
+- Add new recipes
+- Improve the UI/UX
+- Fix bugs
+- Add new features
+- Improve documentation
+
+### Development Guidelines
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+The project uses Husky to run pre-commit hooks that check code quality with ESLint and Prettier.
+
+## 🙏 Acknowledgments
+
+- Built with [Nuxt](https://nuxt.com/)
+- UI components from [Nuxt UI](https://ui.nuxt.com/)
+
+## 📧 Contact
+
+For questions or feedback, please open an issue on GitHub.
+
+---
+
+Made with ❤️ by [roiLeo](https://github.com/roiLeo)
