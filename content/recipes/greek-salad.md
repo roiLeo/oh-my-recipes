@@ -7,7 +7,7 @@ prepTime: 15
 cookTime: 0
 servings: 4
 difficulty: 'easy'
-image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80'
+image: 'https://images.unsplash.com/photo-1606735584785-1848fdcaea57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 imageAlt: 'Traditional Greek salad with feta cheese and olives'
 ingredients:
   - '4 large ripe tomatoes, cut into wedges'
@@ -89,9 +89,6 @@ Serve this salad with:
 *   A glass of crisp white wine or ouzo
 *   Grilled lamb chops or chicken
 *   Marinated octopus or calamari
-
-![Greek salad with bread and wine](https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80)
-*The perfect summer meal.*
 
 ## Make It Ahead?
 

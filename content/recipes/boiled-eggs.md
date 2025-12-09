@@ -7,7 +7,7 @@ prepTime: 5
 cookTime: 7
 servings: 2
 difficulty: 'easy'
-image: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1200&q=80'
+image: 'https://images.unsplash.com/photo-1680987398307-e1ae27a6ed67?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGVyZmVjdCUyMFNvZnQtQm9pbGVkJTIwRWdnc3xlbnwwfHwwfHx8MA%3D%3D'
 imageAlt: 'Perfect soft boiled eggs'
 ingredients:
   - '4 large eggs, at room temperature'
@@ -76,11 +76,3 @@ Soft-boiled eggs are versatile. Here are my favorite ways to eat them:
 *   **Ramen**: Marinate them in soy sauce and mirin for a ramen topping.
 *   **Avocado Toast**: Sliced on top of sourdough with chili flakes.
 *   **Salad**: Halved over a bed of arugula and vinaigrette.
-
-<video controls class="w-full rounded-xl shadow-soft my-10">
-  <source src="https://videos.pexels.com/video-files/4114797/4114797-hd_1920_1080_25fps.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-*The perfect peel reveals the perfect egg.*
-
-Enjoy your perfectly soft-boiled eggs!

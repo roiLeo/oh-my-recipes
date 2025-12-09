@@ -1,5 +1,5 @@
 ---
-title: 'The Ultimate Avocado Toast'
+title: 'Avocado Toast'
 description: "Creamy avocado on sourdough with poached eggs, radish, and chili flakes. The perfect breakfast or brunch."
 publishedAt: 2025-12-05
 category: 'Breakfast'

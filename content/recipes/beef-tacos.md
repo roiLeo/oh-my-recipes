@@ -120,9 +120,6 @@ Layer your toppings in this order for the best bite:
 **Pico de Gallo**: Fresh, chunky, and mild
 **Salsa Macha**: Oil-based with chilies and nuts, for heat lovers
 
-![Various salsas in bowls](https://images.unsplash.com/photo-1614235800394-22e3d1a44a5b?auto=format&fit=crop&w=1000&q=80)
-*Different salsas offer different flavor profiles.*
-
 ## Make It a Taco Bar
 
 Turn taco night into a fun, interactive meal:
@@ -171,6 +168,3 @@ In Mexico, tacos are eaten at any time of day:
 *   **Late Night**: After-party taco stands are legendary
 
 Each region has its specialties, but the foundation remains the same: quality ingredients, simple preparation, and fresh toppings.
-
-![Street taco vendor](https://images.unsplash.com/photo-1599974289062-1c61b8c796e0?auto=format&fit=crop&w=1000&q=80)
-*The spirit of authentic Mexican street food.*

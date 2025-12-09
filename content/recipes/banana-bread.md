@@ -1,5 +1,5 @@
 ---
-title: 'Moist and Delicious Banana Bread'
+title: 'Banana Bread'
 description: "The ultimate banana bread recipe: incredibly moist, perfectly sweet, with a tender crumb. A foolproof way to use up overripe bananas."
 publishedAt: 2025-12-07
 category: 'Baking'
@@ -7,7 +7,7 @@ prepTime: 15
 cookTime: 60
 servings: 10
 difficulty: 'easy'
-image: 'https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1200&q=80'
+image: 'https://images.unsplash.com/photo-1632931057819-4eefffa8e007?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 imageAlt: 'Sliced banana bread on a wooden board'
 ingredients:
   - '3 overripe bananas, mashed (about 1 1/2 cups)'
@@ -94,15 +94,6 @@ This basic recipe is incredibly versatile. Try these variations:
 
 **Bread sticks to pan**: Make sure to grease well or use parchment paper for easy removal.
 
-## Storage Tips
-
-*   **Room temperature**: Store wrapped in plastic wrap or in an airtight container for 3-4 days
-*   **Refrigerator**: Keeps for up to a week (though it may dry out slightly)
-*   **Freezer**: Wrap tightly in plastic wrap, then foil. Freeze for up to 3 months. Thaw at room temperature.
-
-![Banana bread with butter](https://images.unsplash.com/photo-1595535873420-a599195b3f4a?auto=format&fit=crop&w=1000&q=80)
-*A warm slice with butter is pure comfort.*
-
 ## Make It Muffins
 
 This batter also makes excellent muffins! Simply:
@@ -123,7 +114,7 @@ For an elevated version, brown the butter before adding it to the bananas. This 
 
 ## Why You Need This Recipe
 
-Banana bread is the ultimate comfort food. It's:
+Banana bread is the comfort food. It's:
 
 *   **Forgiving**: Hard to mess up, even for beginners
 *   **Practical**: Uses up those bananas that are past their prime

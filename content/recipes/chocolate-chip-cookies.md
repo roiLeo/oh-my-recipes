@@ -1,5 +1,5 @@
 ---
-title: 'The Ultimate Chocolate Chip Cookies'
+title: 'Chocolate Chip Cookies'
 description: "Crispy edges, chewy centers, and loaded with melty chocolate chips. These cookies are everything you dream of in the perfect chocolate chip cookie."
 publishedAt: 2025-12-09
 category: 'Dessert'
