@@ -1,17 +1,22 @@
 <template>
-  <header class="sticky top-0 z-50 w-full bg-background/75 border-b border-muted backdrop-blur-md transition-all">
-    <UContainer class="flex h-14 items-center justify-between">
+  <UHeader>
+    <template #title>
       <NuxtLink class="text-xl" to="/">
         <span>👩‍🍳</span>
         <span class="ml-2 font-serif font-bold hover:text-primary">Oh My Recipes</span>
       </NuxtLink>
-      <div class="flex items-center gap-2">
-        <UNavigationMenu variant="link" :items="items" />
-        <UContentSearchButton />
-        <ThemePicker />
-      </div>
-    </UContainer>
-  </header>
+    </template>
+
+    <template #right>
+      <UNavigationMenu class="hidden lg:flex" variant="link" :items="items" />
+      <UContentSearchButton />
+      <ThemePicker />
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+    </template>
+  </UHeader>
 </template>
 
 <script setup lang="ts">
