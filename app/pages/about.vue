@@ -49,7 +49,6 @@
         <div class="my-24 relative">
           <div class="absolute inset-0 bg-stone-900 rounded-3xl -rotate-1"></div>
           <div class="relative bg-stone-950 rounded-3xl px-8 py-16 md:px-16 md:py-20 text-center border border-stone-800 shadow-2xl overflow-hidden">
-            <!-- Subtle grain texture overlay could go here -->
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
 
             <span class="text-caption text-primary mb-6 block tracking-widest">Newsletter</span>
@@ -62,18 +61,54 @@
               Elevate your kitchen game. Receive our curated weekly digest of recipes, techniques, and stories.
             </p>
 
-            <button
-              onclick="document.getElementById('subscribe-modal').showModal()"
-              class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-stone-950 rounded-full font-medium transition-transform hover:-translate-y-1"
-            >
-              <span>Subscribe Now</span>
-              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
+            <UModal v-model:open="open">
+              <button
+                class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-stone-950 rounded-full font-medium transition-transform hover:-translate-y-1"
+              >
+                <span>Subscribe Now</span>
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+
+              <template #title>
+                Subscribe to <span class="text-bold font-serif text-primary">Oh My Recipes</span>
+              </template>
+              <template #body>
+                <form class="space-y-4" @submit.prevent="subscribe">
+                  <div>Join 10,000+ food lovers. No spam, just delicious content.</div>
+
+                  <UFormField label="Email">
+                    <UInput v-model="email" type="email" class="w-full" placeholder="Enter your email address" required />
+                  </UFormField>
+
+                  <UButton type="submit" size="xl" class="rounded-full" block label="Sign up for free" />
+                </form>
+              </template>
+            </UModal>
           </div>
         </div>
       </div>
     </section>
   </div>
 </template>
+
+<script setup lang="ts">
+const email = ref()
+const open = ref(false)
+
+defineShortcuts({
+  o: () => open.value = !open.value
+})
+
+const subscribe = () => {
+  const toast = useToast()
+  toast.add({
+    color: 'warning',
+    icon: 'i-lucide-triangle-alert',
+    title: 'Uh oh! Something went wrong.',
+    description: 'This feature isn\'t available yet.',
+  })
+  open.value = !open.value
+}
+</script>

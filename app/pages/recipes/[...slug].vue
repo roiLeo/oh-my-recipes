@@ -47,9 +47,9 @@
               <span class="text-sm text-content-muted font-medium">Prep Time</span>
               <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.prepTime) }}</span>
             </div>
-            <div class="flex justify-between items-center pb-3 border-b border-muted">
+            <div v-if="recipe.cookTime" class="flex justify-between items-center pb-3 border-b border-muted">
               <span class="text-sm text-content-muted font-medium">Cook Time</span>
-              <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.cookTime || 0) }}</span>
+              <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.cookTime) }}</span>
             </div>
             <div class="flex justify-between items-center pb-3 border-b border-muted">
               <span class="text-sm text-content-muted font-medium">Total Time</span>
@@ -123,13 +123,3 @@ const tabs = [
   }
 ]
 </script>
-
-<style>
-  .animate-fade-in {
-    animation: fadeIn 0.4s ease-out forwards;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
