@@ -2,14 +2,17 @@
 
 > Culinary Adventures for the Curious Cook
 
-A modern recipe management application built with Nuxt 3, designed to help you discover, organize, and share your favorite recipes.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19965e84-534d-4b20-890d-bf16e0f5c20e/deploy-status)](https://app.netlify.com/projects/ohmyrecipes/deploys)
+[Live Demo](https://ohmyrecipes.netlify.app)
+
+A modern recipe management application built with Nuxt, designed to help you discover, organize, and share your favorite recipes.
 
 ## ✨ Features
 
 - 📖 Browse and search cooking recipes
 - 🎨 Modern, responsive UI built with Nuxt UI
 - 📝 Content-driven architecture with markdown support
-- 🚀 Fast and optimized with Nuxt 3
+- 🚀 Fast and optimized with Nuxt
 - 📱 Mobile-friendly design
 - 🔍 Easy recipe discovery and filtering
 
