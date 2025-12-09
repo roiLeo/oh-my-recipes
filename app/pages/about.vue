@@ -111,4 +111,11 @@ const subscribe = () => {
   })
   open.value = !open.value
 }
+
+useSeoMeta({
+  title: 'Our Story',
+  ogTitle: 'Our Story',
+  description: 'Welcome to Oh My Recipes, a digital sanctuary for food lovers, home cooks, and culinary explorers.',
+  ogDescription: 'Welcome to Oh My Recipes, a digital sanctuary for food lovers, home cooks, and culinary explorers.'
+})
 </script>

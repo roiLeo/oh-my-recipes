@@ -104,14 +104,6 @@
 <script lang="ts" setup>
 const route = useRoute()
 
-const { data: recipe } = await useAsyncData(route.path, () => {
-  return queryCollection('recipes').path(route.path).first()
-})
-
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('recipes', route.path)
-})
-
 const tabs = [
   {
     label: 'The Story',
@@ -122,4 +114,23 @@ const tabs = [
     slot: 'instructions',
   }
 ]
+
+const { data: recipe } = await useAsyncData(route.path, () => {
+  return queryCollection('recipes').path(route.path).first()
+})
+
+const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
+  return queryCollectionItemSurroundings('recipes', route.path)
+})
+
+const title = recipe.value?.seo?.title || recipe.value?.title
+const description = recipe.value?.seo?.description || recipe.value?.description
+
+useSeoMeta({
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
+  ogImage: recipe.value?.image
+})
 </script>

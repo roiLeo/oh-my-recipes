@@ -52,4 +52,11 @@ const { data: latestRecipes } = await useAsyncData('latest', () => {
     .limit(3)
     .all()
 })
+
+useSeoMeta({
+  title: 'Oh My Recipes',
+  ogTitle: 'Oh My Recipes',
+  description: 'Culinary Adventures for the Curious Cook',
+  ogDescription: 'Culinary Adventures for the Curious Cook'
+})
 </script>

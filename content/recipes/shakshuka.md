@@ -65,27 +65,6 @@ Shakshuka (also spelled shakshouka) is a beloved breakfast dish throughout North
 
 > "Shakshuka is the ultimate comfort food - warm, spicy, and meant to be eaten with friends."
 
-## The Perfect One-Pan Meal
-
-What makes shakshuka so appealing:
-
-*   **Simple ingredients**: Pantry staples create magic
-*   **Minimal cleanup**: Everything cooks in one pan
-*   **Customizable**: Adjust spices and add-ins to taste
-*   **Impressive**: Looks restaurant-quality with minimal effort
-*   **Versatile**: Breakfast, lunch, or dinner
-
-## The Best Pan for Shakshuka
-
-A **cast-iron skillet** is ideal because:
-
-1.  Retains heat evenly for perfect egg poaching
-2.  Goes from stovetop to table beautifully
-3.  Creates slight caramelization on the sauce
-4.  Keeps the dish warm while serving
-
-A deep sauté pan or Dutch oven also works well.
-
 ## Achieving the Perfect Egg
 
 The key to shakshuka is runny yolks that mix with the sauce when broken. Here's how:
@@ -181,9 +160,6 @@ Shakshuka is perfect for feeding a group:
 *   **More eggs**: Up to 8-10 eggs in a large skillet
 *   **Serve family-style**: Bring the hot pan to the table with spoons
 *   **Individual portions**: Use small cast-iron skillets (1-2 eggs each)
-
-![Shakshuka being served](https://images.unsplash.com/photo-1526347330119-b0c541488efe?auto=format&fit=crop&w=1000&q=80)
-*Family-style serving brings people together.*
 
 ## Wine and Beverage Pairings
 

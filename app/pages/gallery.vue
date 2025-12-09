@@ -34,4 +34,11 @@ const { data: recipes } = await useAsyncData('gallery', () => {
     .all()
 })
 const recipesWithimages = computed(() => recipes.value?.filter(recipe => recipe.image))
+
+useSeoMeta({
+  title: 'Culinary Gallery',
+  ogTitle: 'Culinary Gallery',
+  description: 'Explore our recipes through the lens. A collection of textures, colors, and flavors.',
+  ogDescription: 'Explore our recipes through the lens. A collection of textures, colors, and flavors.'
+})
 </script>

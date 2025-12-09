@@ -2,7 +2,7 @@
 <template>
   <div class="max-w-4xl mx-auto px-4">
     <header class="mb-8">
-      <UPageHeader :ui="{ title: 'font-serif' }" title="Food Recipes" description="Discover our latest food recipes and articles" />
+      <UPageHeader :ui="{ title: 'font-serif' }" :title :description />
     </header>
 
     <!-- Search and Filter Section -->
@@ -85,5 +85,15 @@ const defaultTag = { label: 'All', value: null }
 const allCategories = [...new Set(recipes.value?.map((recipe) => recipe.category).filter(Boolean))]
 const allTags = [...new Set(recipes.value?.flatMap((recipe) => recipe.tags || []).filter(Boolean))].sort().map(tag => ({ label: tag.charAt(0).toUpperCase() + tag.slice(1), value: tag })).concat(defaultTag)
 
+const title = 'Food Recipes'
+const description = 'Discover our latest food recipes and articles'
+
 watch([searchValue, selectedTag, selectedCat], () => refresh())
+
+useSeoMeta({
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description
+})
 </script>
