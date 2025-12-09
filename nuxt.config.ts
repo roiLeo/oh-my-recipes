@@ -11,6 +11,11 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en']
+  },
+
   content: {
     experimental: { nativeSqlite: true },
   },

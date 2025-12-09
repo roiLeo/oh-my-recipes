@@ -43,13 +43,13 @@
             Details
           </h3>
           <div class="space-y-4">
-            <div class="flex justify-between items-center pb-3 border-b border-muted">
+            <div v-if="recipe.prepTime" class="flex justify-between items-center pb-3 border-b border-muted">
               <span class="text-sm text-content-muted font-medium">Prep Time</span>
               <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.prepTime) }}</span>
             </div>
             <div class="flex justify-between items-center pb-3 border-b border-muted">
               <span class="text-sm text-content-muted font-medium">Cook Time</span>
-              <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.cookTime) }}</span>
+              <span class="text-base font-bold text-content font-mono">{{ formatTime(recipe.cookTime || 0) }}</span>
             </div>
             <div class="flex justify-between items-center pb-3 border-b border-muted">
               <span class="text-sm text-content-muted font-medium">Total Time</span>
@@ -122,26 +122,6 @@ const tabs = [
     slot: 'instructions',
   }
 ]
-
-function formatDate(date: Date): string {
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
-
-function getDifficultyLabel(difficulty?: 'easy' | 'medium' | 'hard'): string {
-  const labels = { easy: 'Easy', medium: 'Medium', hard: 'Hard' };
-  return difficulty ? labels[difficulty] : '';
-}
-
-function formatTime(minutes: number): string {
-  if (minutes < 60) return `${minutes} min`;
-  const hours = Math.floor(minutes / 60);
-  const mins = minutes % 60;
-  return mins > 0 ? `${hours}h ${mins}min` : `${hours}h`;
-}
 </script>
 
 <style>

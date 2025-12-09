@@ -61,7 +61,7 @@
     </UBlogPosts>
 
     <!-- No Results Message -->
-    <div v-if="!recipes.length" class="text-center py-16">
+    <div v-if="!recipes?.length" class="text-center py-16">
       <p class="text-dimmed">No articles found matching your criteria.</p>
     </div>
   </div>
@@ -83,28 +83,6 @@ const { data: recipes, refresh } = await useAsyncData('recipes', () => {
 
 const allCategories = [...new Set(recipes.value?.map((recipe) => recipe.category).filter(Boolean))]
 const allTags = [...new Set(recipes.value?.flatMap((recipe) => recipe.tags || []).filter(Boolean))].sort()
-
-const formatDate = (date: Date): string => {
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
-
-const getDifficultyLabel = (difficulty?: 'easy' | 'medium' | 'hard'): string => {
-  const labels = { easy: 'Easy', medium: 'Medium', hard: 'Hard' }
-  return difficulty ? labels[difficulty] : ''
-}
-
-const getTotalTime = (prepTime?: number, cookTime?: number): string => {
-  const total = (prepTime || 0) + (cookTime || 0)
-  if (total === 0) return ''
-  if (total < 60) return `${total} min`
-  const hours = Math.floor(total / 60)
-  const mins = total % 60
-  return mins > 0 ? `${hours}h ${mins}min` : `${hours}h`
-}
 
 watch([searchValue, selectedTag, selectedCat], () => refresh())
 </script>

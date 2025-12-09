@@ -33,5 +33,5 @@ const { data: recipes } = await useAsyncData('gallery', () => {
     .order('publishedAt', 'DESC')
     .all()
 })
-const recipesWithimages = computed(() => recipes.value.filter(recipe => recipe.image))
+const recipesWithimages = computed(() => recipes.value?.filter(recipe => recipe.image))
 </script>
