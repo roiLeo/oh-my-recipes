@@ -5,8 +5,9 @@
         <span>👩‍🍳</span>
         <span class="ml-2 font-serif font-bold hover:text-primary">Oh My Recipes</span>
       </NuxtLink>
-      <div class="flex gap-2">
+      <div class="flex items-center gap-2">
         <UNavigationMenu variant="link" :items="items" />
+        <UContentSearchButton />
         <ThemePicker />
       </div>
     </UContainer>

@@ -7,7 +7,7 @@
 
     <!-- Search and Filter Section -->
     <div class="space-y-4">
-      <UInput v-model="searchValue" icon="i-lucide-search" class="w-full" size="xl" variant="outline" placeholder="Search recipes..." />
+      <InputSearchBar v-model="searchValue" />
 
       <div class="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
         <!-- Category Filters -->
@@ -68,21 +68,22 @@
 </template>
 
 <script lang="ts" setup>
-const selectedTag = ref('')
+const searchValue = ref(null)
+const selectedTag = ref(null)
 const selectedCat = ref('')
-const searchValue = ref('')
 
 const { data: recipes, refresh } = await useAsyncData('recipes', () => {
   return queryCollection('recipes')
-    .where('title', 'LIKE', `%${searchValue.value}%`)
+    .where('title', 'LIKE', `%${searchValue.value ?? ''}%`)
+    .where('tags', 'LIKE', `%${selectedTag.value ?? ''}%`)
     .where('category', 'LIKE', `%${selectedCat.value}%`)
-    .where('tags', 'LIKE', `%${selectedTag.value}%`)
     .order('publishedAt', 'DESC')
     .all()
 })
 
+const defaultTag = { label: 'All', value: null }
 const allCategories = [...new Set(recipes.value?.map((recipe) => recipe.category).filter(Boolean))]
-const allTags = [...new Set(recipes.value?.flatMap((recipe) => recipe.tags || []).filter(Boolean))].sort()
+const allTags = [...new Set(recipes.value?.flatMap((recipe) => recipe.tags || []).filter(Boolean))].sort().map(tag => ({ label: tag.charAt(0).toUpperCase() + tag.slice(1), value: tag })).concat(defaultTag)
 
 watch([searchValue, selectedTag, selectedCat], () => refresh())
 </script>

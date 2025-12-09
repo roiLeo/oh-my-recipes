@@ -1,5 +1,14 @@
 <template>
   <UApp>
+    <ClientOnly>
+      <LazyUContentSearch
+        v-model:search-term="searchTerm"
+        shortcut="meta_k"
+        :files="files"
+        :navigation="navigation"
+        :fuse="{ resultLimit: 42 }"
+      />
+    </ClientOnly>
     <div class="flex min-h-screen flex-col">
       <DefaultNavbar />
 
@@ -13,3 +22,12 @@
     </div>
   </UApp>
 </template>
+
+<script setup lang="ts">
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('recipes'))
+const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('recipes'), {
+  server: false
+})
+
+const searchTerm = ref('')
+</script>

@@ -13,7 +13,7 @@
       <h1 class="text-4xl md:text-6xl text-content mb-6 font-serif font-medium leading-tight tracking-tight">{{ recipe.title }}</h1>
       <p class="text-xl text-content-muted mb-8 leading-relaxed max-w-2xl mx-auto">{{ recipe.description }}</p>
 
-      <div class="flex items-center justify-center gap-8 text-sm text-content-subtle border-y border-stone-100 py-4 max-w-lg mx-auto">
+      <div class="flex items-center justify-center gap-8 text-sm text-content-subtle border-y border-accented py-4 max-w-lg mx-auto">
         <div class="flex items-center gap-2">
           <UIcon name="i-lucide-calendar" class="text-primary size-4" />
           <time :datetime="new Date(recipe.publishedAt).toISOString()" class="text-sm text-muted">
