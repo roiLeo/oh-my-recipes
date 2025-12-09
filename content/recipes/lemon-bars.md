@@ -1,7 +1,7 @@
 ---
-title: 'Perfect Lemon Bars'
+title: 'Lemon Bars'
 description: "Tangy, sweet lemon custard on a buttery shortbread crust. These classic lemon bars are the balance of tart and sweet."
-publishedAt: 2025-12-15
+publishedAt: 2025-11-15
 category: 'Dessert'
 prepTime: 20
 cookTime: 50

@@ -9,7 +9,7 @@
     <div class="space-y-4">
       <InputSearchBar v-model="searchValue" />
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-between items-start">
         <!-- Category Filters -->
         <div class="flex flex-wrap gap-2">
           <UButton label="All" class="rounded-full px-4" color="neutral" :variant="selectedCat === '' ? 'solid' : 'outline'" @click="selectedCat = ''" />
