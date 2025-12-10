@@ -59,7 +59,7 @@
             </div>
             <div class="flex justify-between items-center pt-1">
               <span class="text-sm text-content-muted font-medium">Servings</span>
-              <span class="text-base font-bold text-content font-mono">{{ recipe.servings }} ppl</span>
+              <span class="text-base font-bold text-content font-mono">{{ recipe.servings }} <UIcon name="i-lucide-users-round" /></span>
             </div>
           </div>
         </div>
@@ -120,7 +120,9 @@ const { data: recipe } = await useAsyncData(route.path, () => {
 })
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('recipes', route.path)
+  return queryCollectionItemSurroundings('recipes', route.path, {
+    fields: ['description']
+  })
 })
 
 const title = recipe.value?.seo?.title || recipe.value?.title

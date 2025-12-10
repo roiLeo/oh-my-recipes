@@ -84,9 +84,6 @@ The key to authentic tikka masala is the charred, smoky flavor from grilling or 
 
 ## Building Layers of Flavor
 
-![Spices for tikka masala](https://images.unsplash.com/photo-1596040033229-a0b2462b7b0f?auto=format&fit=crop&w=1000&q=80)
-*The spice blend is what makes this dish magical.*
-
 The sauce is built in layers:
 
 1.  **Aromatics**: Onions cooked until sweet and golden
