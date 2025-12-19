@@ -1,5 +1,5 @@
 ---
-title: 'Classic Caprese Salad'
+title: 'Caprese Salad'
 description: "A simple Italian salad featuring ripe tomatoes, fresh mozzarella, basil, and olive oil. The colors of the Italian flag in perfect harmony."
 publishedAt: 2025-12-13
 category: 'Salad'

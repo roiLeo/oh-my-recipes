@@ -1,5 +1,5 @@
 ---
-title: 'Authentic Greek Salad (Horiatiki)'
+title: 'Greek Salad (Horiatiki)'
 description: "A traditional Greek village salad with ripe tomatoes, crisp cucumbers, olives, and creamy feta. Simple, fresh, and bursting with Mediterranean flavors."
 publishedAt: 2025-12-08
 category: 'Salad'

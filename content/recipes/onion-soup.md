@@ -1,5 +1,5 @@
 ---
-title: 'Classic French Onion Soup'
+title: 'French Onion Soup'
 description: "Rich, deeply caramelized onions in a savory beef broth, topped with crusty bread and melted Gruyère cheese. A warming classic that's worth every minute of cooking."
 publishedAt: 2025-12-03
 category: 'Soup'

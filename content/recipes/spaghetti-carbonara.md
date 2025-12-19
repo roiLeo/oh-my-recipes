@@ -1,5 +1,5 @@
 ---
-title: 'Classic Spaghetti Carbonara'
+title: 'Spaghetti Carbonara'
 description: "Authentic Roman pasta carbonara made with eggs, hard cheese, cured pork, and black pepper. No cream allowed!"
 publishedAt: 2025-12-04
 category: 'Pasta'

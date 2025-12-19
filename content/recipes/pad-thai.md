@@ -1,5 +1,5 @@
 ---
-title: 'Authentic Pad Thai'
+title: 'Pad Thai'
 description: "Thailand's iconic stir-fried rice noodles with shrimp, tofu, peanuts, and a perfect balance of sweet, sour, and savory flavors."
 publishedAt: 2025-12-11
 category: 'Main Course'
