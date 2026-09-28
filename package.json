@@ -28,7 +28,7 @@
     ]
   },
   "devDependencies": {
-    "@nuxt/devtools": "4.0.0-beta.1",
+    "@nuxt/devtools": "4.0.0-beta.2",
     "@nuxt/eslint-config": "^1.17.0",
     "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
@@ -40,8 +40,8 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@nuxt/content": "3.16.0",
-    "@nuxt/ui": "4.11.1",
+    "@nuxt/content": "3.16.1",
+    "@nuxt/ui": "4.11.2",
     "@nuxtjs/i18n": "^10.6.0",
     "nuxt": "^4.5.2",
     "sqlite3": "^6.0.1"
